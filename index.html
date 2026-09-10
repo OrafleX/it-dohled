@@ -1,6 +1,143 @@
-T Dohled
-#Domů #Služby #Kontakt
-IT správa bez zbytečných výpadků
-Správa serverů, záloh, VMware, MSSQL a bezpečnostních systémů.
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lokální správa IT, serverů, záloh a bezpečnosti pro malé firmy v Rychvaldu a okolí.">
+  <meta name="theme-color" content="#0b0d10">
+  <title>Mazur IT | Správa IT bez zbytečných výpadků</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#domu" aria-label="Mazur IT - domů">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span><strong>Mazur IT</strong><small>Lokální správa &amp; dohled</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Otevřít menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Hlavní navigace">
+        <a href="#domu" class="active">Domů</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#cenik">Ceník</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#kontakt" class="nav-cta">Nezávazná konzultace</a>
+      </nav>
+    </div>
+  </header>
 
-# Nezávazný audit
+  <main>
+    <section class="hero section" id="domu">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> IT POD KONTROLOU • RYCHVALD A OKOLÍ</div>
+          <h1>IT správa bez<br><span>zbytečných výpadků.</span></h1>
+          <p class="hero-lead">Servery, zálohy, virtualizace, monitoring a bezpečnost pro malé firmy a živnostníky. Plánovanou údržbu provádím přednostně mimo váš běžný provoz.</p>
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn btn-primary">Domluvit nezávaznou konzultaci <span>→</span></a>
+            <a href="#sluzby" class="btn btn-secondary">Prohlédnout služby</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>24/7</strong><span>technický monitoring</span></div>
+            <div><strong>20–25 km</strong><span>lokální působnost</span></div>
+            <div><strong>Po 16:00</strong><span>plánovaná údržba</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Ukázka monitoringu IT infrastruktury">
+          <div class="dashboard-window">
+            <div class="window-top"><div class="dots"><i></i><i></i><i></i></div><span>Infrastructure Overview</span><div class="live"><b></b> LIVE</div></div>
+            <div class="dash-body">
+              <aside class="dash-side"><div class="mini-logo"></div><i class="on"></i><i></i><i></i><i></i><i></i><i></i></aside>
+              <div class="dash-content">
+                <div class="dash-title"><div><span>Firemní infrastruktura</span><small>Aktualizováno právě teď</small></div><button>Posledních 24 h</button></div>
+                <div class="status-cards">
+                  <div><small>DOSTUPNOST</small><strong>99.98%</strong><em class="green">● Online</em></div>
+                  <div><small>ZÁLOHY</small><strong>12/12</strong><em class="green">● V pořádku</em></div>
+                  <div><small>INCIDENTY</small><strong>0</strong><em>Bez výstrah</em></div>
+                </div>
+                <div class="chart-card">
+                  <div class="chart-head"><span>Vytížení serverů</span><div><b class="legend cpu"></b> CPU <b class="legend ram"></b> RAM</div></div>
+                  <svg viewBox="0 0 560 180" preserveAspectRatio="none" aria-hidden="true">
+                    <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff6a21" stop-opacity=".28"/><stop offset="100%" stop-color="#ff6a21" stop-opacity="0"/></linearGradient></defs>
+                    <g class="grid-lines"><line x1="0" y1="35" x2="560" y2="35"/><line x1="0" y1="75" x2="560" y2="75"/><line x1="0" y1="115" x2="560" y2="115"/><line x1="0" y1="155" x2="560" y2="155"/></g>
+                    <path class="area" d="M0,145 C35,125 50,132 78,111 S130,98 154,117 S205,140 232,91 S285,56 312,82 S362,127 390,96 S435,55 462,74 S518,102 560,49 L560,180 L0,180 Z"/>
+                    <path class="cpu-line" d="M0,145 C35,125 50,132 78,111 S130,98 154,117 S205,140 232,91 S285,56 312,82 S362,127 390,96 S435,55 462,74 S518,102 560,49"/>
+                    <path class="ram-line" d="M0,105 C42,93 70,99 104,88 S168,73 205,81 S269,108 309,96 S376,70 418,82 S493,64 560,77"/>
+                  </svg>
+                  <div class="chart-axis"><span>00:00</span><span>04:00</span><span>08:00</span><span>12:00</span><span>16:00</span><span>20:00</span><span>24:00</span></div>
+                </div>
+                <div class="server-list"><div><span class="server-icon">▦</span><p><b>SERVER-01</b><small>Windows Server • VMware</small></p><em>V pořádku</em></div><div><span class="server-icon">▦</span><p><b>BACKUP-NAS</b><small>Veeam repository</small></p><em>V pořádku</em></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card fc-one"><span>✓</span><div><b>Záloha dokončena</b><small>SERVER-01 • před 2 min</small></div></div>
+          <div class="floating-card fc-two"><span>●</span><div><b>Všechny systémy online</b><small>Bez aktivních incidentů</small></div></div>
+        </div>
+      </div>
+      <div class="container tech-strip reveal"><span>Technologie, které spravuji</span><div><b>Microsoft</b><b>Windows Server</b><b>VMware</b><b>Veeam</b><b>Zabbix</b><b>MSSQL</b></div></div>
+    </section>
+
+    <section class="section services" id="sluzby">
+      <div class="container">
+        <div class="section-heading reveal"><div><span class="kicker">CO PRO VÁS ZAJISTÍM</span><h2>Kompletní péče o firemní IT</h2></div><p>Od základního dohledu až po správu serverů a obnovu dat. Rozsah služby nastavíme podle skutečných potřeb firmy.</p></div>
+        <div class="services-grid">
+          <article class="service-card featured reveal"><span class="number">01</span><div class="icon network"><i></i><i></i><i></i><i></i></div><h3>Monitoring a dohled</h3><p>Průběžný dohled nad servery, disky, vytížením, službami, certifikáty, UPS a síťovými prvky.</p><ul><li>Automatická upozornění</li><li>Kontrola kritických služeb</li><li>Včasné odhalení problémů</li></ul><a href="#kontakt">Chci mít IT pod dohledem →</a></article>
+          <article class="service-card reveal delay-1"><span class="number">02</span><div class="service-icon">↻</div><h3>Zálohy a obnova dat</h3><p>Kontrola zálohovacích úloh, kapacity a obnovitelnosti dat. Včetně Veeam a NAS úložišť.</p><ul><li>Kontrola výsledků záloh</li><li>Testy obnovy</li><li>Návrh bezpečné retence</li></ul></article>
+          <article class="service-card reveal delay-2"><span class="number">03</span><div class="service-icon">▣</div><h3>Servery a virtualizace</h3><p>Správa Windows Server, VMware, Hyper-V, Proxmox a souvisejících firemních služeb.</p><ul><li>Aktualizace mimo provoz</li><li>Výkon a dostupnost</li><li>Migrace a modernizace</li></ul></article>
+          <article class="service-card reveal"><span class="number">04</span><div class="service-icon">⌁</div><h3>Firewall, VPN a síť</h3><p>Bezpečný vzdálený přístup, základní správa firewallu, routerů, switchů a Wi-Fi.</p><ul><li>VPN pro zaměstnance</li><li>Dohled síťových prvků</li><li>Základní dokumentace</li></ul></article>
+          <article class="service-card reveal delay-1"><span class="number">05</span><div class="service-icon">⌾</div><h3>Bezpečnostní audit</h3><p>Praktická kontrola účtů, přístupů, aktualizací, antiviru, vzdáleného přístupu a záloh.</p><ul><li>Semafor rizik</li><li>Priority nápravy</li><li>Srozumitelný PDF výstup</li></ul></article>
+          <article class="service-card reveal delay-2"><span class="number">06</span><div class="service-icon">☁</div><h3>Microsoft 365</h3><p>Správa uživatelů, MFA a základních bezpečnostních nastavení podle dostupných licencí.</p><ul><li>Kontrola přístupů</li><li>MFA a administrátorské role</li><li>Licence účtované zvlášť</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="container process-grid">
+        <div class="process-copy reveal"><span class="kicker">JEDNODUCHÝ ZAČÁTEK</span><h2>Nejdřív zjistíme,<br>co skutečně potřebujete.</h2><p>Žádné zbytečné licence ani univerzální balíček. Nejprve projdeme prostředí a oddělíme důležité věci od těch, které mohou počkat.</p><a href="#kontakt" class="text-link">Domluvit vstupní konzultaci →</a></div>
+        <ol class="steps reveal delay-1"><li><span>01</span><div><h3>Krátká konzultace</h3><p>Probereme počet zařízení, servery, zálohy a největší současné problémy.</p></div></li><li><span>02</span><div><h3>Audit prostředí</h3><p>Na místě ověřím skutečný stav infrastruktury a klíčová rizika.</p></div></li><li><span>03</span><div><h3>Jasný návrh</h3><p>Dostanete seznam doporučení, cenu nápravy a variantu měsíční správy.</p></div></li><li><span>04</span><div><h3>Převzetí do dohledu</h3><p>Nasadíme monitoring, nastavíme kontakty a přesně vymezíme rozsah podpory.</p></div></li></ol>
+      </div>
+    </section>
+
+    <section class="section pricing" id="cenik">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="kicker">PŘEHLEDNĚ A BEZ SKRYTÝCH PŘÍPLATKŮ</span><h2>Orientační balíčky správy</h2><p>Konečná cena vychází z počtu zařízení, rozsahu monitoringu, záloh, požadované priority a zahrnutého servisu.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card reveal"><div class="price-top"><span>ZÁKLAD</span><h3>Základní dohled</h3><p>Pro malé prostředí, kde potřebujete hlavně včas vědět, že se něco děje.</p></div><div class="price"><small>od</small><strong>2 900</strong><span>Kč / měsíc</span></div><ul><li>24/7 monitoring sjednaných prvků</li><li>Týdenní kontrola výsledku záloh</li><li>Kontrola dostupnosti důležitých služeb</li><li>Měsíční souhrn stavu</li><li>Servisní práce účtované zvlášť</li></ul><a href="#kontakt" class="btn btn-secondary full">Nezávazně poptat</a></article>
+          <article class="price-card popular reveal delay-1"><div class="popular-label">NEJČASTĚJŠÍ VOLBA</div><div class="price-top"><span>SPRÁVA</span><h3>Správa malé firmy</h3><p>Pravidelná péče o menší firemní prostředí včetně základního servisu.</p></div><div class="price"><small>od</small><strong>5 900</strong><span>Kč / měsíc</span></div><ul><li>Vše ze Základního dohledu</li><li>Obvykle 1 server a až 10 zařízení</li><li>Základní správa firewallu a VPN</li><li>2 hodiny vzdáleného servisu</li><li>P1: zahájení řešení do 4 hodin*</li></ul><a href="#kontakt" class="btn btn-primary full">Chci správu malé firmy</a></article>
+          <article class="price-card reveal delay-2"><div class="price-top"><span>NA MÍRU</span><h3>Individuální správa</h3><p>Pro více serverů, virtualizaci, NAS, síť, Wi-Fi, kamery nebo více lokalit.</p></div><div class="price custom"><strong>Individuálně</strong><span>podle prostředí</span></div><ul><li>Samostatná kalkulace zařízení</li><li>Monitoring, backup a bezpečnost</li><li>Volitelná správa Microsoft 365</li><li>Kamery, NVR, UPS a síťové prvky</li><li>Rozsah SLA podle dohody</li></ul><a href="#kontakt" class="btn btn-secondary full">Připravit kalkulaci</a></article>
+        </div>
+        <div class="audit-banner reveal"><div><span class="audit-icon">⌕</span><div><small>NEVÍTE, KDE ZAČÍT?</small><h3>Rychlý vstupní IT audit od 3 490 Kč</h3><p>1–2 hodiny na místě, kontrola hlavních rizik a stručný PDF protokol s doporučením.</p></div></div><a href="#kontakt" class="btn btn-light">Objednat audit →</a></div>
+        <p class="pricing-note">* SLA znamená dobu do potvrzení a zahájení diagnostiky v dohodnutém servisním okně, nikoli garantovanou dobu úplného odstranění závady. Licence, hardware, cloudové služby, doprava a práce nad sjednaný rozsah nejsou automaticky součástí paušálu.</p>
+      </div>
+    </section>
+
+    <section class="section local"><div class="container local-grid"><div class="local-card reveal"><div class="map"><span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><b class="pin">●</b><span class="town t1">Ostrava</span><span class="town t2">Bohumín</span><span class="town t3">Orlová</span><span class="town t4">Karviná</span><strong>RYCHVALD</strong></div></div><div class="local-copy reveal delay-1"><span class="kicker">LOKÁLNĚ A OSOBNĚ</span><h2>Neanonymní podpora<br>z vašeho regionu.</h2><p>Zaměřuji se na malé firmy a živnostníky v Rychvaldu, Ostravě, Bohumíně, Orlové a Karviné. Když vzdálená pomoc nestačí, je možné domluvit výjezd.</p><div class="local-points"><div><span>✓</span><p><b>Osobní přístup</b><small>Jedno konkrétní kontaktní místo.</small></p></div><div><span>✓</span><p><b>Údržba mimo provoz</b><small>Plánované práce přednostně po 16:00.</small></p></div><div><span>✓</span><p><b>Srozumitelný výstup</b><small>Bez zbytečného technického balastu.</small></p></div></div></div></div></section>
+
+    <section class="section contact" id="kontakt">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><span class="kicker">POJĎME PROJÍT VAŠE IT</span><h2>Nezávazná konzultace</h2><p>Popište stručně počet zařízení, zda používáte server, NAS nebo zálohování, a co vás aktuálně nejvíc trápí. Ozvu se s návrhem dalšího postupu.</p><div class="contact-details"><a href="tel:+420000000000"><span>☎</span><div><small>Telefon</small><b>+420 XXX XXX XXX</b></div></a><a href="mailto:info@mazurit.cz"><span>✉</span><div><small>E-mail</small><b>info@mazurit.cz</b></div></a><div><span>⌖</span><div><small>Působnost</small><b>Rychvald a okolí do 20–25 km</b></div></div><div><span>◷</span><div><small>Plánovaný servis</small><b>Po–Pá po 16:00, víkendy dle dohody</b></div></div></div></div>
+        <form class="contact-form reveal delay-1" id="contactForm" novalidate>
+          <div class="form-head"><span>Nezávazná poptávka</span><small>Formulář je v ukázkovém režimu</small></div>
+          <div class="form-row"><label>Jméno a firma<input type="text" name="name" placeholder="Jan Novák, ABC s.r.o." required></label><label>Telefon<input type="tel" name="phone" placeholder="+420 123 456 789"></label></div>
+          <label>E-mail<input type="email" name="email" placeholder="jan@firma.cz" required></label>
+          <label>O co máte zájem?<select name="service"><option>Vstupní IT audit</option><option>Měsíční monitoring a dohled</option><option>Kompletní správa IT</option><option>Zálohování a obnova dat</option><option>Server / virtualizace / migrace</option><option>Jiný požadavek</option></select></label>
+          <label>Stručný popis<textarea name="message" rows="5" placeholder="Například: 12 PC, 1 server, NAS a firewall. Potřebujeme prověřit zálohy a navrhnout měsíční správu."></textarea></label>
+          <button class="btn btn-primary full" type="submit">Odeslat nezávaznou poptávku <span>→</span></button>
+          <p class="form-note">Odesláním formuláře nevzniká objednávka ani smluvní závazek.</p>
+          <div class="form-message" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-grid"><div><a class="brand" href="#domu"><span class="brand-mark"><span></span><span></span><span></span></span><span><strong>Mazur IT</strong><small>Lokální správa &amp; dohled</small></span></a><p>IT správa, monitoring, zálohy a bezpečnost pro malé firmy v Moravskoslezském kraji.</p></div><div><h4>Navigace</h4><a href="#domu">Domů</a><a href="#sluzby">Služby</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a></div><div><h4>Služby</h4><a href="#sluzby">Monitoring</a><a href="#sluzby">Zálohování</a><a href="#sluzby">Servery</a><a href="#sluzby">Bezpečnostní audit</a></div><div><h4>Kontakt</h4><span>Rychvald a okolí</span><a href="mailto:info@mazurit.cz">info@mazurit.cz</a><span>Po–Pá po 16:00</span></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Mazur IT. Všechna práva vyhrazena.</span><span>Ukázkový web • GitHub Pages</span></div></footer>
+  <button class="back-top" aria-label="Zpět nahoru">↑</button>
+</body>
+</html>
